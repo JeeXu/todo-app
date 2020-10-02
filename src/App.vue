@@ -11,7 +11,7 @@
 @import url('https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 body {
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(75, 75, 75);
 }
 
 </style>

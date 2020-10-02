@@ -45,6 +45,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex: 1;
+  font-size: 15px;
 }
 span {
   padding: 0 20px;
