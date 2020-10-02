@@ -58,13 +58,14 @@ export default {
 .avatar_face {
   width: 44px;
   height: 44px;
-  border-radius: 100%;
+  border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   img {
     display: block;
     width: 100%;
     height: 100%;
+    // object-fit: cover;
   }
 }
 .avatar_name {
