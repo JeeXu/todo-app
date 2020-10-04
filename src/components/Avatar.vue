@@ -2,7 +2,8 @@
   <!-- avatar（头像） -->
   <div class="avatar" :class="{ avatar_selected: !!selected }">
     <div class="avatar_face">
-      <img :src="avatar_imgUrl" alt="头像" />
+      <!-- <img :src="avatar_imgUrl" alt="头像" /> -->
+      <img src="../assets/image/avatar.jpg" alt="头像" />
     </div>
     <!-- 姓名 -->
     <h2 class="avatar_name">{{ avatar_name }}</h2>
@@ -21,7 +22,7 @@ import { mapState, mapGetters } from 'vuex'
 export default {
   data() {
     return {
-      avatar_imgUrl: 'https://source.unsplash.com/300x300',
+      // avatar_imgUrl: 'https://source.unsplash.com/300x300',
       avatar_name: 'Hello, Jane',
       today: new Date()
       // selected: true

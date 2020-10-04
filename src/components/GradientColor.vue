@@ -18,9 +18,9 @@ export default {
   },
   computed: {
     gradientColor() {
-      const colorBottom = `color-stop(30%, ${this.colors[0]})`
-      const colorTop = `to(${this.colors[1]})`
-      return `-webkit-gradient(linear, left bottom, left top, ${colorBottom}, ${colorTop})`
+      const colorBottom = this.colors[0]
+      const colorTop = this.colors[1]
+      return `linear-gradient(0deg, ${colorBottom}, ${colorTop})`
     }
   }
 }

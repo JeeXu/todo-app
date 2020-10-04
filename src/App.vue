@@ -11,6 +11,10 @@
 @import url('https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 body {
-  background-color: rgb(75, 75, 75);
+  user-select: none;
+}
+
+#app {
+  height: 100vh;
 }
 </style>
