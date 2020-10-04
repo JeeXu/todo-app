@@ -26,21 +26,21 @@
         <h4 class="todo_subtitle" v-if="todayTasks.length">Today</h4>
         <ul>
           <li v-for="task in todayTasks" :key="task.id">
-            <task :todo="todo" :task="task" />
+            <task :task="task" />
           </li>
         </ul>
         <!-- 明天的 -->
         <h4 class="todo_subtitle" v-if="tomorrowTasks.length">Tomorrow</h4>
         <ul>
           <li v-for="task in tomorrowTasks" :key="task.id">
-            <task :todo="todo" :task="task" />
+            <task :task="task" />
           </li>
         </ul>
         <!-- 过时的 -->
         <h4 class="todo_subtitle" v-if="outdatedTasks.length">Outdated</h4>
         <ul>
           <li v-for="task in outdatedTasks" :key="task.id">
-            <task :todo="todo" :task="task" />
+            <task :task="task" />
           </li>
         </ul>
       </div>
@@ -52,7 +52,8 @@
 import Task from './Task.vue'
 import { today, tomorrow } from '../common/js/shared'
 export default {
-  comments: {
+  name: 'Todo',
+  components: {
     Task
   },
   props: {
@@ -115,7 +116,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .todo {
   flex: 1;
   margin: 0 8px;

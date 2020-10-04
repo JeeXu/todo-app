@@ -8,7 +8,7 @@
       >
         <todo
           :todo="todo"
-          :selected="selected && selected.todo === todo"
+          :selected="selected && todo === selected.todo"
           @select="selectTodo"
         />
       </li>
@@ -17,9 +17,10 @@
 </template>
 
 <script>
-import Todo from './Todo.vue'
 import { mapState, mapMutations } from 'vuex'
+import Todo from './Todo.vue'
 export default {
+  name: 'TodoList',
   components: {
     Todo
   },
@@ -32,7 +33,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .todo-list {
   padding: 0 32px;
   height: 400px;

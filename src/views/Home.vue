@@ -5,6 +5,7 @@
     <gradient />
     <todo-list />
     <todo-detail />
+    <floating-button />
   </div>
 </template>
 
@@ -14,13 +15,15 @@ import Avatar from '../components/Avatar.vue'
 import Gradient from '../components/Gradient.vue'
 import TodoList from '../components/TodoList.vue'
 import TodoDetail from '../components/TodoDetail.vue'
+import FloatingButton from '../components/FloatingButton.vue'
 export default {
   components: {
     AppBar,
     Avatar,
     Gradient,
     TodoList,
-    TodoDetail
+    TodoDetail,
+    FloatingButton
   }
 }
 </script>

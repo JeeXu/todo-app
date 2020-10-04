@@ -12,6 +12,7 @@ import { mapState, mapMutations } from 'vuex'
 import AppBar from './AppBar.vue'
 import Todo from './Todo.vue'
 export default {
+  name: 'TodoDetail',
   components: {
     AppBar,
     Todo

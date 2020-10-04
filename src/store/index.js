@@ -63,6 +63,7 @@ export default new Vuex.Store({
             deleted: false
           },
           {
+            id: 9,
             title: 'Quick Prototyping',
             date: new Date('2020-10-01'),
             done: false,
