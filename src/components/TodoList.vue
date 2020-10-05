@@ -24,6 +24,28 @@ export default {
   components: {
     Todo
   },
+  mounted() {
+    const touch = {}
+    this.$el.addEventListener('touchstart', evt => {
+      touch.startX = evt.touches[0].clientX
+      touch.endX = 0
+    })
+    this.$el.addEventListener('touchmove', evt => {
+      touch.endX = evt.touches[0].clientX
+    })
+    this.$el.addEventListener('touchend', evt => {
+      if (!touch.endX || Math.abs(touch.endX - touch.startX) < 10) {
+        return
+      }
+      if (touch.endX < touch.startX) {
+        this.nextTodo()
+      } else {
+        this.prevTodo()
+      }
+      touch.startX = evt.touches[0].clientX
+      touch.endX = 0
+    })
+  },
   computed: {
     ...mapState(['todos', 'currentIndex', 'selected'])
   },
