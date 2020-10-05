@@ -1,6 +1,3 @@
----
-typora-root-url: public\preview
----
 
 # todo-app
 
