@@ -23,14 +23,14 @@ npm run lint
 
 ### Preview
 
-<img src="./public/preview/01-01.png" style="zoom:50%;" />
+<img src="https://github.com/JeeXu/todo-app/public/preview/01-01.png" style="zoom:50%;" />
 
-<img src="./public/preview/01-02.png" style="zoom:50%;" />
+<img src="https://github.com/JeeXu/todo-app/public/preview/01-02.png" style="zoom:50%;" />
 
-<img src="./public/preview/01-03.png" style="zoom:50%;" />
+<img src="https://github.com/JeeXu/todo-app/public/preview/01-03.png" style="zoom:50%;" />
 
-<img src="./public/preview/02.png" style="zoom:50%;" />
+<img src="https://github.com/JeeXu/todo-app/public/preview/02.png" style="zoom:50%;" />
 
-<img src="./public/preview/03.png" style="zoom:50%;" />
+<img src="https://github.com/JeeXu/todo-app/public/preview/03.png" style="zoom:50%;" />
 
 
