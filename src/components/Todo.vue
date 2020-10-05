@@ -1,5 +1,5 @@
 <template>
-  <div class="todo" :class="{ todo__selected: selected }">
+  <div class="todo" :class="{ todo__selected: selected }" @click="handleClick">
     <!-- todo head -->
     <div class="todo_head" @click="handleClick">
       <div class="todo_icon" :style="{ color }">
