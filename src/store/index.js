@@ -63,6 +63,41 @@ export default new Vuex.Store({
             deleted: false
           },
           {
+            id: 10,
+            title: '组织会议1',
+            date: new Date(),
+            done: true,
+            deleted: false
+          },
+          {
+            id: 11,
+            title: '组织会议2',
+            date: new Date(),
+            done: true,
+            deleted: false
+          },
+          {
+            id: 12,
+            title: '组织会议3',
+            date: new Date(),
+            done: true,
+            deleted: false
+          },
+          {
+            id: 13,
+            title: '组织会议4',
+            date: new Date(),
+            done: true,
+            deleted: false
+          },
+          {
+            id: 14,
+            title: '组织会议5',
+            date: new Date(),
+            done: true,
+            deleted: false
+          },
+          {
             id: 9,
             title: 'Quick Prototyping',
             date: new Date('2020-10-01'),

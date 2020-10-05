@@ -120,7 +120,6 @@ export default {
 .todo {
   flex: 1;
   margin: 0 8px;
-  overflow: hidden;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   color: #666;
 }

@@ -62,14 +62,15 @@ export default {
 <style lang="scss">
 // 此处不加 scoped   让此处css代码能够覆盖 todo 组件
 .todo-detail {
-  position: fixed;
-  display: flex;
+  position: absolute;
   flex-direction: column;
   border-radius: 0;
   background-color: #fff;
   color: #666;
   will-change: top, left, width, height;
   .todo {
+    height: 100%;
+    overflow: auto;
     margin: 0;
     margin-top: -44px;
     padding: 0 20px;
@@ -83,10 +84,13 @@ export default {
     opacity: 0;
   }
   .todo_tasks {
+    overflow: auto;
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
   .app-bar {
+    position: static;
+    background-color: rgba(255, 255, 255, 0.85);
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }

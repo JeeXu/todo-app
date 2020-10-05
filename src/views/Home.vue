@@ -5,6 +5,9 @@
     <gradient />
     <todo-list />
     <todo-detail />
+    <!-- floating-button 放在后面，层级会高，会显示在todo-editing 组件上
+      否则，todo-editing 会覆盖 button -->
+    <todo-editing />
     <floating-button />
   </div>
 </template>
@@ -15,6 +18,7 @@ import Avatar from '../components/Avatar.vue'
 import Gradient from '../components/Gradient.vue'
 import TodoList from '../components/TodoList.vue'
 import TodoDetail from '../components/TodoDetail.vue'
+import TodoEditing from '../components/TodoEditing.vue'
 import FloatingButton from '../components/FloatingButton.vue'
 export default {
   components: {
@@ -23,7 +27,8 @@ export default {
     Gradient,
     TodoList,
     TodoDetail,
-    FloatingButton
+    FloatingButton,
+    TodoEditing
   }
 }
 </script>
