@@ -1,3 +1,7 @@
+---
+typora-root-url: public\preview
+---
+
 # todo-app
 
 ## Project setup
@@ -20,5 +24,16 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Preview
+
+<img src="./public/preview/01-01.png" style="zoom:50%;" />
+
+<img src="./public/preview/01-02.png" style="zoom:50%;" />
+
+<img src="./public/preview/01-03.png" style="zoom:50%;" />
+
+<img src="./public/preview/02.png" style="zoom:50%;" />
+
+<img src="./public/preview/03.png" style="zoom:50%;" />
+
+
