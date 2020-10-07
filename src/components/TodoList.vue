@@ -42,8 +42,23 @@ export default {
       } else {
         this.prevTodo()
       }
-      touch.startX = evt.touches[0].clientX
+      touch.startX = 0
       touch.endX = 0
+    })
+    // 防抖
+    let timer = null
+    this.$el.addEventListener('mousewheel', evt => {
+      if (timer) {
+        clearTimeout(timer)
+        timer = null
+      }
+      timer = setTimeout(() => {
+        if (evt.wheelDelta > 0) {
+          this.prevTodo()
+        } else if (evt.wheelDelta < 0) {
+          this.nextTodo()
+        }
+      }, 250)
     })
   },
   computed: {

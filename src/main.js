@@ -5,6 +5,8 @@ import store from './store'
 
 import './assets/css/reset.css'
 
+// import 'default-passive-events'
+
 Vue.config.productionTip = false
 
 new Vue({
